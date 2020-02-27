@@ -1,0 +1,44 @@
+TERENTE ANDREI-ALEXANDRU
+GRUPA 325CA
+
+POO. TEMA 1. README
+
+
+Detalli despre design:
+-------------------------------------------------------------------------------
+
+o Orice interactiune cu bunurile din cadrul jocului este reprezentata
+ca fiind o interactiune cu ID-ul corespunzator bunului. Pt. a accesa
+atribute specifice ale unui bun (ex.: profit, penalty etc.) am utilizat
+clasa AssetDictionary, ce contine toate detaliile necesare referitoare
+la bunuri memorate static in cadrul unui HashMap. Am considerat ca
+aceasta abordare este mai eficienta deoarece:
+	- pachetul contine 216 carti, insa exista doar 7 tipuri diferite
+	de bunuri
+	- gestionarea datelor este mai rapida intrucat lucrez doar cu
+	elemente de tip Integer 
+
+
+o Clasa Gameboard incapsuleaza toti parametrii necesari desfasurarii jocului
+(jucatori, pachet de carti etc.). Clasa are rolul de mediator, intrucat
+controleaza majoritatea interactiunilor dintre respectivii parametri
+(alegerea jucatorilor ce trebuiesc inspectati, inspectia propriu-zisa etc.). 
+
+
+o Clasa AbstractPlayer reprezinta jucatorul oarecare, care are atributele
+de baza ale unui participant la joc. In functie de input, fiecare jucator
+va dobandi o strategie prin extensia la clasa corespunzatoare.
+
+
+o Am urmat Factory Pattern pt. a atribui unui jucator oarecare o strategie
+pe care sa o urmeze, in functie de input.
+
+
+o Am urmat Strategy Pattern pt. a putea organiza desfasurarea jocului in
+contextul jucatorului oarecare, aplicarea strategiei corespunzatoare
+fiecarui jucator fiind realizata la runtime.
+
+
+
+
+

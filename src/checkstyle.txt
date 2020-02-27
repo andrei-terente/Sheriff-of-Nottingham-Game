@@ -1,0 +1,21 @@
+Starting audit...
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetDictionary.java:7:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetKey.java:6:29: Variable 'assetProfit' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetKey.java:7:29: Variable 'assetPenalty' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetKey.java:8:29: Variable 'assetIsLegal' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetKey.java:9:29: Variable 'assetKingBonus' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetKey.java:10:29: Variable 'assetQueenBonus' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetKey.java:11:29: Variable 'assetBonus' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetBag.java:10:29: Variable 'assetsInBag' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetBag.java:11:29: Variable 'declaredAsset' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/asset/AssetBag.java:42:41: 'declaredAsset' hides a field. [HiddenField]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/factory/PlayerFactory.java:12: First sentence should end with a period. [JavadocStyle]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/gameboard/GameBoard.java:18:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/main/Main.java:15:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/player/AbstractPlayer.java:20:29: Variable 'goldCount' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/player/AbstractPlayer.java:21:29: Variable 'assetsInHand' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/player/AbstractPlayer.java:22:29: Variable 'assetsOnMerchantStand' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/player/AbstractPlayer.java:23:29: Variable 'bag' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/andrei/poo/checker1/tema1/schelet/src/player/AbstractPlayer.java:41:5: Class 'AbstractPlayer' looks like designed for extension (can be subclassed), but the method 'defaultSetupBag' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractPlayer' final or making the method 'defaultSetupBag' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+Audit done.
+Checkstyle ends with 18 errors.
